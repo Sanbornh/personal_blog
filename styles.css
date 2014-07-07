@@ -1,0 +1,55 @@
+@import url(http://fonts.googleapis.com/css?family=Merriweather:400,700);
+
+html, body {
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  font-family: "Merriweather", serif;
+  font-size: 100%;
+  background-color: #F5F3EB;
+}
+
+ul {
+  list-style: none;
+}
+
+.content-wrapper {
+  width: 67%;
+  float:left;
+}
+
+/*  NAVBAR  */
+
+nav {
+  width: 33%;
+  /*float: left;*/
+  position: fixed;
+}
+
+nav > ul {
+  float: right;
+  margin-top: 35%;
+}
+
+nav > ul li {
+  font-weight: 700;
+  text-align: right;
+  font-size: 2em;
+  line-height: 1.45em;
+  color: #262222;
+}
+
+#blog-btn:before, #about-btn:before, #projects-btn:before {
+  position: absolute;
+  opacity: 0.3;
+  color: rgba(255,255,255, 0.2);
+  text-shadow: 1px 4px 6px #E0CCCC, 0 0 0 black, 1px 4px 6px #F5F3EB;
+}
+
+#blog-btn:before     { content: "Blog"; }
+
+#about-btn:before    { content: "About"; }
+
+#projects-btn:before { content: "Projects"; }
