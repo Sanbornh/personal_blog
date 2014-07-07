@@ -1,29 +1,31 @@
 $( document ).ready(function() {
-  $('#blog-btn').hover(function(){
-    $(this).addClass('fill').addClass('fill-blue');
-    $(this).removeClass('empty');
-  }, 
-    function() {
-      $(this).addClass('empty');
-      $(this).removeClass('fill')
+
+  function fill(elem, color) {
+    $(elem).addClass('fill').addClass(color);
+    $(elem).removeClass('empty');
+  }
+
+  function empty(elem) {
+    $(elem).addClass('empty');
+    $(elem).removeClass('fill');  
+  }
+
+  $('#blog-btn').hoverIntent(function() {
+    fill(this, 'fill-blue');
+  }, function() {
+    empty(this);
   });
 
-  $('#about-btn').hover(function(){
-    $(this).addClass('fill').addClass('fill-red');
-    $(this).removeClass('empty');
-  }, 
-    function() {
-      $(this).addClass('empty');
-      $(this).removeClass('fill')
+  $('#about-btn').hoverIntent(function(){
+    fill(this, 'fill-red');
+  }, function() {
+    empty(this);
   });
 
-  $('#projects-btn').hover(function(){
-    $(this).addClass('fill').addClass('fill-green');
-    $(this).removeClass('empty');
-  }, 
-    function() {
-      $(this).addClass('empty');
-      $(this).removeClass('fill')
+  $('#projects-btn').hoverIntent(function(){
+    fill(this, 'fill-green');
+  }, function() {
+      empty(this);
   });
 
 })

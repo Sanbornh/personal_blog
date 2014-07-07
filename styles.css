@@ -17,10 +17,10 @@ ul {
 
 a, a:visited, a:hover, a:active {
   text-decoration: none;
-  color: #92A3A1;
+  color: #9BABAD;
 }
 
-/*  NAVBAR  */
+/*****  NAVBAR  *****/
 
 nav {
   width: 33%;
@@ -36,13 +36,19 @@ nav > ul li {
   font-weight: 700;
   text-align: right;
   font-size: 2em;
-  line-height: 3em;
+  line-height: 1em;
   color: #3B4241;
+}
+
+nav > ul div {
+  height: 2.6em;
+  overflow: hidden;
+  padding: 2px;
 }
 
 #blog-btn:before, #about-btn:before, #projects-btn:before {
   position: absolute;
-  opacity: 0.5;
+  opacity: 0.6;
   color: rgba(255,255,255, 0.2);
   text-shadow: 1px 4px 6px #F5F3EB, 0 0 0 black, 1px 1px 0px #fff;
 }
@@ -56,13 +62,13 @@ nav > ul li {
 #projects-btn:before { content: "Projects"; }
 
 @-webkit-keyframes waves-up {
-  0%   { background-position: 0 120px; }
-  100% { background-position: 0 70px; }
+  0%   { background-position: 0 90px; }
+  100% { background-position: 0 43px; }
 }
 
 @-webkit-keyframes waves-down {
-  0%   { background-position: 0 70px; }
-  100% { background-position: 0 120px; }
+  0%   { background-position: 0 43px; }
+  100% { background-position: 0 90px; }
 }
 
 
@@ -74,7 +80,7 @@ nav > ul li {
 .fill {
   color: transparent;
   -webkit-background-clip: text;
-  -webkit-animation: waves-up 2s;
+  -webkit-animation: waves-up 1s;
   -webkit-animation-fill-mode: forwards; 
   height: 3em;
 }
@@ -82,7 +88,7 @@ nav > ul li {
 .empty {
   color: transparent;
   -webkit-background-clip: text;
-  -webkit-animation: waves-down 2s;
+  -webkit-animation: waves-down 1s;
   -webkit-animation-fill-mode: forwards; 
   height: 3em;
 }
