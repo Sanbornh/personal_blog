@@ -80,11 +80,13 @@ nav > ul div {
 .fill { 
   -webkit-animation: waves-up 1s;
   -webkit-animation-fill-mode: forwards; 
+  -webkit-animation-timing-function: ease-in;
 }
 
 .empty{ 
-  -webkit-animation: waves-down 1s;
+  -webkit-animation: waves-down 2s;
   -webkit-animation-fill-mode: forwards; 
+  -webkit-animation-timing-function: ease-in;
 }
 
 /**** SOCIAL LINKS ****/
