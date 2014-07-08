@@ -11,7 +11,8 @@ $( document ).ready(function() {
   }
 
   $('li').hoverIntent(function() {
-    fill(this, 'fill-' + $(this).data('color'));
+    var color = $(this).data('color');
+    fill(this, 'fill-' + color);
   }, function() {
     empty(this);
   });  
