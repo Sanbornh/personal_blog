@@ -71,41 +71,55 @@ nav > ul div {
 .fill-red  { background: -webkit-linear-gradient(#3B4241 50%, red 50%); }
 .fill-green{ background: -webkit-linear-gradient(#3B4241 50%, green 50%); }
 
-
-.fill {
+.fill, .empty {
   color: transparent;
   -webkit-background-clip: text;
+  height: 3em;
+}
+
+.fill { 
   -webkit-animation: waves-up 1s;
   -webkit-animation-fill-mode: forwards; 
-  height: 3em;
 }
 
-.empty {
-  color: transparent;
-  -webkit-background-clip: text;
+.empty{ 
   -webkit-animation: waves-down 1s;
   -webkit-animation-fill-mode: forwards; 
-  height: 3em;
 }
 
-/*  CONTENT  */
+/**** SOCIAL LINKS ****/
+
+@-webkit-keyframes pulse {
+  0%   { text-shadow: 0 0 0px #F5F3EB;}
+  50%  { text-shadow: 0 0 4px tomato;}
+  100% { text-shadow: 0 0 0px #F5F3EB;}
+}
+
+.glow {
+  /*text-shadow: 0 0 0px tomato;*/
+  -webkit-animation: pulse 8s infinite;
+}
+
+/*****  CONTENT  *****/
 
 .content-wrapper {
   width: 100%;
   height: 100%;
 }
 
-.clear-fix {
-  width: 34%;
+.clear-fix, .content {
   height: 100%;
   float: left;
   display: inline-block;
 }
 
+.clear-fix {
+  width: 34%;
+}
+
 .content {
   width: 66%;
-  height: 200%;
-  float: left;
-  display: inline-block;
 }
+
+
 

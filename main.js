@@ -17,4 +17,11 @@ $( document ).ready(function() {
     empty(this);
   });  
 
+
+  $('.fa').hoverIntent(function() {
+    $(this).addClass('glow');
+  }, function() {
+    $(this).removeClass('glow');
+  })
+
 })
